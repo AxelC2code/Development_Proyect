@@ -78,4 +78,3 @@ Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y compartir
 
 ---
 ¡Vamos con todo! 🚀
-```

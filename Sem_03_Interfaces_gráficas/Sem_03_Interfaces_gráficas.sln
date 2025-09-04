@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36212.18 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pryTestForm", "pryTestForm\pryTestForm.csproj", "{DCA21E63-ACF9-44B1-A592-258DCBB08697}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sem_03_Interfaces_gráficas", "Sem_03_Interfaces_gráficas\Sem_03_Interfaces_gráficas.csproj", "{730A6233-C3FE-456C-8EC3-1BB37B277393}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DCA21E63-ACF9-44B1-A592-258DCBB08697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DCA21E63-ACF9-44B1-A592-258DCBB08697}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DCA21E63-ACF9-44B1-A592-258DCBB08697}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DCA21E63-ACF9-44B1-A592-258DCBB08697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{730A6233-C3FE-456C-8EC3-1BB37B277393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{730A6233-C3FE-456C-8EC3-1BB37B277393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{730A6233-C3FE-456C-8EC3-1BB37B277393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{730A6233-C3FE-456C-8EC3-1BB37B277393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E740E00D-9A94-41C7-BBC6-EAECDB9FEA79}
+		SolutionGuid = {8493BB29-486A-4CAA-8902-D1FD636A6442}
 	EndGlobalSection
 EndGlobal

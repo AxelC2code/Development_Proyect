@@ -1,4 +1,4 @@
-namespace pryTestForm
+namespace Sem_03_Interfaces_gráficas
 {
     internal static class Program
     {

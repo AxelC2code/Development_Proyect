@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            funenaldelegado = new Label();
+            SuspendLayout();
+            // 
+            // funenaldelegado
+            // 
+            funenaldelegado.AutoSize = true;
+            funenaldelegado.Location = new Point(0, 0);
+            funenaldelegado.Name = "funenaldelegado";
+            funenaldelegado.Size = new Size(76, 15);
+            funenaldelegado.TabIndex = 0;
+            funenaldelegado.Text = "colaboración";
+            funenaldelegado.Click += label1_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(funenaldelegado);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label funenaldelegado;
     }
 }

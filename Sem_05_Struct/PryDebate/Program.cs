@@ -1,4 +1,4 @@
-namespace Sem_03_Interfaces_gráficas
+namespace PryDebate
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Sem_03_Interfaces_gráficas
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmEjemplo3());
+            Application.Run(new Form1());
         }
     }
 }

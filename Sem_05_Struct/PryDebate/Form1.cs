@@ -1,4 +1,4 @@
-namespace Sem_03_Interfaces_gráficas
+namespace PryDebate
 {
     public partial class Form1 : Form
     {

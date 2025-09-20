@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtInput = new System.Windows.Forms.TextBox();
+            this.txtInput_1 = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.lsvHistorial = new System.Windows.Forms.ListView();
+            this.dataInput = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dataSolve = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
             this.btnMult = new System.Windows.Forms.Button();
@@ -48,16 +50,18 @@
             this.btn8 = new System.Windows.Forms.Button();
             this.btn7 = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
+            this.lblSign = new System.Windows.Forms.Label();
+            this.txtInput_2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // txtInput
+            // txtInput_1
             // 
-            this.txtInput.Font = new System.Drawing.Font("Carlito", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInput.Location = new System.Drawing.Point(12, 142);
-            this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(294, 31);
-            this.txtInput.TabIndex = 0;
-            this.txtInput.Text = "0";
+            this.txtInput_1.Font = new System.Drawing.Font("Carlito", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput_1.Location = new System.Drawing.Point(12, 142);
+            this.txtInput_1.Name = "txtInput_1";
+            this.txtInput_1.Size = new System.Drawing.Size(116, 31);
+            this.txtInput_1.TabIndex = 0;
+            this.txtInput_1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
             // btnClear
             // 
@@ -72,6 +76,9 @@
             // 
             // lsvHistorial
             // 
+            this.lsvHistorial.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.dataInput,
+            this.dataSolve});
             this.lsvHistorial.Font = new System.Drawing.Font("Carlito", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lsvHistorial.HideSelection = false;
             this.lsvHistorial.Location = new System.Drawing.Point(12, 12);
@@ -79,6 +86,16 @@
             this.lsvHistorial.Size = new System.Drawing.Size(294, 124);
             this.lsvHistorial.TabIndex = 5;
             this.lsvHistorial.UseCompatibleStateImageBehavior = false;
+            // 
+            // dataInput
+            // 
+            this.dataInput.Text = "Input";
+            this.dataInput.Width = 137;
+            // 
+            // dataSolve
+            // 
+            this.dataSolve.Text = "Solve";
+            this.dataSolve.Width = 150;
             // 
             // btnDelete
             // 
@@ -122,6 +139,7 @@
             this.btn6.TabIndex = 11;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn5
             // 
@@ -134,6 +152,7 @@
             this.btn5.TabIndex = 10;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn4
             // 
@@ -146,6 +165,7 @@
             this.btn4.TabIndex = 9;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btnMenos
             // 
@@ -168,6 +188,7 @@
             this.btn3.TabIndex = 15;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn2
             // 
@@ -180,6 +201,7 @@
             this.btn2.TabIndex = 14;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn1
             // 
@@ -192,6 +214,8 @@
             this.btn1.TabIndex = 13;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.Numero_Click);
+            this.btn1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_KeyPress);
             // 
             // btnPoint
             // 
@@ -202,6 +226,7 @@
             this.btnPoint.TabIndex = 18;
             this.btnPoint.Text = ".";
             this.btnPoint.UseVisualStyleBackColor = true;
+            this.btnPoint.Click += new System.EventHandler(this.btnPoint_Click);
             // 
             // btn0
             // 
@@ -214,6 +239,7 @@
             this.btn0.TabIndex = 17;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btnSuma
             // 
@@ -224,6 +250,7 @@
             this.btnSuma.TabIndex = 24;
             this.btnSuma.Text = "+";
             this.btnSuma.UseVisualStyleBackColor = true;
+            this.btnSuma.Click += new System.EventHandler(this.btnSuma_Click);
             // 
             // btn9
             // 
@@ -236,6 +263,7 @@
             this.btn9.TabIndex = 23;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn8
             // 
@@ -248,6 +276,7 @@
             this.btn8.TabIndex = 22;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btn7
             // 
@@ -260,6 +289,7 @@
             this.btn7.TabIndex = 21;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.Numero_Click);
             // 
             // btnIgual
             // 
@@ -271,12 +301,34 @@
             this.btnIgual.TabIndex = 25;
             this.btnIgual.Text = "=";
             this.btnIgual.UseVisualStyleBackColor = false;
+            this.btnIgual.Click += new System.EventHandler(this.btnIgual_Click);
+            // 
+            // lblSign
+            // 
+            this.lblSign.AutoSize = true;
+            this.lblSign.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblSign.Location = new System.Drawing.Point(148, 145);
+            this.lblSign.Name = "lblSign";
+            this.lblSign.Size = new System.Drawing.Size(0, 23);
+            this.lblSign.TabIndex = 26;
+            // 
+            // txtInput_2
+            // 
+            this.txtInput_2.Font = new System.Drawing.Font("Carlito", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtInput_2.Location = new System.Drawing.Point(190, 142);
+            this.txtInput_2.Name = "txtInput_2";
+            this.txtInput_2.Size = new System.Drawing.Size(116, 31);
+            this.txtInput_2.TabIndex = 27;
+            this.txtInput_2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtInput_2_KeyPress);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(314, 463);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(321, 463);
+            this.Controls.Add(this.txtInput_2);
+            this.Controls.Add(this.lblSign);
             this.Controls.Add(this.btnIgual);
             this.Controls.Add(this.btnSuma);
             this.Controls.Add(this.btn9);
@@ -296,7 +348,7 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lsvHistorial);
             this.Controls.Add(this.btnClear);
-            this.Controls.Add(this.txtInput);
+            this.Controls.Add(this.txtInput_1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "CALCULADORA";
@@ -307,7 +359,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtInput;
+        private System.Windows.Forms.TextBox txtInput_1;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.ListView lsvHistorial;
         private System.Windows.Forms.Button btnDelete;
@@ -327,6 +379,10 @@
         private System.Windows.Forms.Button btn8;
         private System.Windows.Forms.Button btn7;
         private System.Windows.Forms.Button btnIgual;
+        private System.Windows.Forms.ColumnHeader dataInput;
+        private System.Windows.Forms.ColumnHeader dataSolve;
+        private System.Windows.Forms.Label lblSign;
+        private System.Windows.Forms.TextBox txtInput_2;
     }
 }
 

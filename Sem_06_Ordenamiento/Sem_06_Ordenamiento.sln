@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36414.22 d17.14
+VisualStudioVersion = 17.14.36414.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PryMetBubble", "PryMetBubble\PryMetBubble.csproj", "{3F3C1E6E-D7C2-4438-BDC2-E27677220ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PryDemoOrdenamiento", "PryDemoOrdenamiento\PryDemoOrdenamiento.csproj", "{B3C25D7A-D0F7-49BF-95B4-81E9981699F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{926A7C9B-D815-461E-A968-8B5B798E8A1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{3F3C1E6E-D7C2-4438-BDC2-E27677220ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F3C1E6E-D7C2-4438-BDC2-E27677220ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F3C1E6E-D7C2-4438-BDC2-E27677220ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C25D7A-D0F7-49BF-95B4-81E9981699F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C25D7A-D0F7-49BF-95B4-81E9981699F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C25D7A-D0F7-49BF-95B4-81E9981699F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C25D7A-D0F7-49BF-95B4-81E9981699F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926A7C9B-D815-461E-A968-8B5B798E8A1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926A7C9B-D815-461E-A968-8B5B798E8A1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926A7C9B-D815-461E-A968-8B5B798E8A1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926A7C9B-D815-461E-A968-8B5B798E8A1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
